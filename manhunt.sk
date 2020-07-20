@@ -1,0 +1,12 @@
+command /manhunt [<string>] [<string>]:
+    executable by: players
+    trigger:
+        if arg-1 is "admin":
+            if player has permission "manhunt.admin":
+                set {_world} to player's world
+                if arg-2 is "setSpawn":
+                    set {man.%{_world}%.spawn} to {_world}
+                if arg-2 is "setArena":
+                    set {man.%{_world}%.arena} to {_world}
+            else:
+                send "&cYou do not have permission to perform this command"

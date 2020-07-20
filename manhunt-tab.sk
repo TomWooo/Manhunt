@@ -1,0 +1,8 @@
+on tab completer for "manhunt":
+    if argument at 3 is not set:
+        stop
+    if argument at 1 is "admin":
+        add "setSpawn" to completions
+        add "setArena" to completions
+        stop
+    add "admin" to completions
