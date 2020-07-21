@@ -6,3 +6,4 @@ on tab completer for "manhunt":
         add "setArena" to completions
         stop
     add "admin" to completions
+    
